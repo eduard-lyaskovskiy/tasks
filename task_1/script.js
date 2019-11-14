@@ -12,12 +12,12 @@ let expenses = {
 console.log(expenses);
 //3
 let appData = {
-    "budget" : money,
-    "timeData" : time,
-    "obligatoryExpenses" : oblExp,
-    "optionalExpenses" : "",
-    "income" : [],
-    "savings" : false
+    budget : money,
+    timeData : time,
+    obligatoryExpenses : oblExp,
+    optionalExpenses : "",
+    income : [],
+    savings : false
 };
 console.log('%c appData', 'color: orange; font-weight: bold;' );
 console.log({ budget, timeData, obligatoryExpenses, optionalExpenses, income, savings});
