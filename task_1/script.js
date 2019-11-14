@@ -20,3 +20,5 @@ var appData = {
     savings : false
 };
 console.log(appData);
+
+var budgetForOneDay = alert(+money/30);
