@@ -1,17 +1,17 @@
 "use strict";
 // 2
-let money = prompt("Ваш бюджет на месяц?");
-let time = prompt("Введите дату в формате YYYY-MM-DD", "YYYY-MM-DD");
+var money = prompt("Ваш бюджет на месяц?");
+var time = prompt("Введите дату в формате YYYY-MM-DD", "YYYY-MM-DD");
 //4
-let oblExp = prompt("Введите обязательную статью расходов в этом месяце"); 
-let totalExp = prompt("Во сколько обойдется?");
+var oblExp = prompt("Введите обязательную статью расходов в этом месяце"); 
+var totalExp = prompt("Во сколько обойдется?");
 
-let expenses = {
+var expenses = {
     oblExp : totalExp
 };
 console.log(expenses);
 //3
-let appData = {
+var appData = {
     budget : money,
     timeData : time,
     obligatoryExpenses : oblExp,
@@ -19,5 +19,4 @@ let appData = {
     income : [],
     savings : false
 };
-console.log('%c appData', 'color: orange; font-weight: bold;' );
-console.log({ budget, timeData, obligatoryExpenses, optionalExpenses, income, savings});
+console.log(appData);
