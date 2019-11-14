@@ -7,7 +7,7 @@ var oblExp = prompt("Введите обязательную статью рас
 var totalExp = prompt("Во сколько обойдется?");
 
 var expenses = {
-    oblExp : totalExp
+    [oblExp] : totalExp
 };
 console.log(expenses);
 //3
