@@ -6,14 +6,13 @@ var time = prompt("Введите дату в формате YYYY-MM-DD", "YYYY-
 var oblExp = prompt("Введите обязательную статью расходов в этом месяце"); 
 var totalExp = prompt("Во сколько обойдется?");
 
-var expenses = {
-    [oblExp] : totalExp
-};
+    
 console.log(expenses);
 //3
 var appData = {
     budget : money,
     timeData : time,
+    expenses : { [oblExp] : totalExp },
     obligatoryExpenses : oblExp,
     optionalExpenses : "",
     income : [],
