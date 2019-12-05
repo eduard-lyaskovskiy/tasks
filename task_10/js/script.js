@@ -62,6 +62,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
         function updateClock() {
             let t = getTimeRemaining(endtime);
+            /* Не колхозный вариант 
+                    function addZero(num){
+                        if(num <= 9) {
+                            return '0' + num;
+                        } else return num;
+                    };
+                    hours.textContent = addZero(t.hours);
+                    minutes.textContent = addZero(t.minutes);
+                    seconds.textContent = addZero(t.seconds);
+            */
             hours.textContent = t.hours;
             if (hours.textContent.length == 1) {
                 hours.textContent = "0" + hours.textContent;
