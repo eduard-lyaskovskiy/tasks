@@ -8,13 +8,13 @@ document.addEventListener("DOMContentLoaded", function() {
         tabContent = document.querySelectorAll(".info-tabcontent");
 
     
-        function hideTabContent(a) {
+    function hideTabContent(a) {
         for (let i = a; i < tabContent.length; i++) {
             tabContent[i].classList.remove("show");
             tabContent[i].classList.add("hide");
-        }
+            }
     }
-    
+
     hideTabContent(1);
     
     function showTabContent(b) {
