@@ -3,7 +3,7 @@ const app = express();
 const port = 3000;
 const path = require('path');
 const bodyParser = require('body-parser');
-const workDir = `${path.join(__dirname)}/task_13/`;
+const workDir = `${path.join(__dirname)}/task_14/calc/`;
 
 app.use(express.static(workDir));
 app.use(bodyParser.urlencoded({extended: false}))
